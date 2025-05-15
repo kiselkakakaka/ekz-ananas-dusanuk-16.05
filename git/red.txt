@@ -1,0 +1,38 @@
+Пример минимального CI в пустом проекте:
+
+    Создай локально:
+
+mkdir my-ci-test
+cd my-ci-test
+git init
+
+    Добавь структуру папок:
+
+mkdir -p .github/workflows
+
+    Создай файл .github/workflows/ci.yml с любым содержимым, например:
+
+name: Hello CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "🎉 CI работает!"
+
+    Зафиксируй в git:
+
+git add .
+git commit -m "Добавлен CI пайплайн"
+
+    Свяжи с репозиторием и запушь:
+
+git remote add origin https://github.com/твое_имя/репозиторий.git
+git branch -M main
+git push -u origin main
+
