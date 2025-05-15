@@ -1,0 +1,16 @@
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process права админа для установки 
+
+Создай проект React + Vite
+
+npm create vite@latest currency-converter -- --template react
+cd currency-converter
+npm install
+
+npm run dev
+
+git init
+git remote add origin https://github.com/ТВОЙ_ЛОГИН/react-currency-converter.git
+git add .
+git commit -m "Мини-приложение конвертации валют"
+git branch -M main
+git push -u origin main

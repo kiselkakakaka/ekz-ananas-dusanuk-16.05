@@ -1,0 +1,40 @@
+    PHP-сервер (в корне экз 16):
+
+php -S localhost:8000
+
+    React-приложение:
+
+cd frontend/frontend
+npm install
+npm run dev
+
+📌 2. Разреши запуск скриптов PowerShell (если нужно)
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+📌 3. Создай проект React с шаблоном Vite
+
+npm create vite@latest frontend -- --template react
+
+    В процессе:
+
+    Выбери React
+
+    Выбери JavaScript
+
+    Vite создаст папку frontend/
+
+📌 4. Перейди в папку проекта
+
+cd frontend
+
+📌 5. Установи зависимости
+
+npm install
+
+📌 6. Запусти React-приложение
+
+npm run dev
+
+Откроется на:
+🔗 http://localhost:5173

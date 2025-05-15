@@ -1,0 +1,22 @@
+📌 Установка:
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process права админа для установки 
+npm create vite@latest todo-app -- --template react
+cd todo-app
+npm install
+
+Запуск проекта
+
+npm run dev
+
+ 4. Залить на GitHub
+
+    Создай репозиторий на GitHub (например: react-todo-vite)
+
+    Свяжи его с локальным проектом:
+
+git init
+git remote add origin https://github.com/ТВОЙ_ЛОГИН/react-todo-vite.git
+git add .
+git commit -m "Мини ToDo-приложение на React + Vite"
+git branch -M main
+git push -u origin main
